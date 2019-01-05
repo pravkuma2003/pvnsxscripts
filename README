@@ -1,0 +1,4 @@
+LBScript_prep.ps1+NSX_LB_script <- Build NSX LB using script
+VCSADEPLOY+Install-nsx-info-homelab.xlsx+Install-NSX-PV.PS1 <- Script to build NSX-homelaba components
+Vghetto <- Build ESX+VC homelab
+
