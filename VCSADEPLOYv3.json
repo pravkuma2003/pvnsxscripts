@@ -1,0 +1,48 @@
+{
+    "__comments":
+    [
+        "William Lam - www.virtuallyghetto.com",
+        "Example VCSA 6.0 Embedded Deployment w/Static IP Address"
+    ],
+ 
+    "deployment":
+    {
+        "esx.hostname":"172.29.1.200",
+        "esx.datastore":"datastore1",
+        "esx.username":"root",
+        "esx.password":"C!sco123",
+        "deployment.option":"tiny",
+        "deployment.network":"access333",
+        "appliance.name":"vcsa",
+        "appliance.thin.disk.mode":true
+    },
+ 
+    "vcsa":
+    {
+ 
+        "system":
+        {
+            "root.password":"C!sco123",
+            "ssh.enable":true,
+            "ntp.servers":"172.29.1.19"
+        },
+ 
+        "sso":
+        {
+            "password":"C!sco123",
+            "domain-name":"homelab.local",
+            "site-name":"virtuallyGhetto"
+        },
+ 
+        "networking":
+        {
+            "ip.family":"ipv4",
+            "mode":"static",
+            "ip":"172.29.1.50",
+            "prefix":"24",
+            "gateway":"172.29.1.19",
+            "dns.servers":"172.29.1.19",
+            "system.name":"172.29.1.50"
+        }
+    }
+}
